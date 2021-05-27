@@ -1,6 +1,5 @@
-**Clone este projeto no diretório:** `/root/bin/`
-
-Em seguida, execute os passos abaixo.
+# Clone este projeto no diretório
+`cd /root/bin/ && git clone https://github.com/gosattelecom/chaves_ssh_gosat.git`
 
 # Dê permissão de execução
 `chmod /root/bin/chaves_ssh_gosat/sync_ssh_keys.sh`
