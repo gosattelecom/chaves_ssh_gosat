@@ -14,6 +14,7 @@ if [[ ! -d ${GIT_DIR} ]]; then
     cd /root/bin/
     ${GIT} clone https://gosattelecom:github.com/gosattelecom/chaves_ssh_gosat.git
 else
+    ${GIT} checkout .
     cd ${GIT_DIR}
     ${GIT} pull
 fi
