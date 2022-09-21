@@ -25,6 +25,7 @@ ${CHOWN} root:root ${SSH_DIR}/authorized_keys
 
 echo '' >> ${SSH_DIR}/authorized_keys
 IFS=$'\n'
+echo "# Chaves FailSafe" >> ${SSH_DIR}/authorized_keys
 for key in ${SSH_KEYS_MANDATORY[@]}; do
     echo $key >> ${SSH_DIR}/authorized_keys
 done
