@@ -12,10 +12,10 @@ SSH_KEYS_MANDATORY=("ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDLvZxd2Wl4etZhJYr1+Xj
 
 if [[ ! -d ${GIT_DIR} ]]; then
     cd /root/bin/
-    ${GIT} clone https://github.com/gosattelecom/chaves_ssh_gosat.git
+    ${GIT} clone https://gosattelecom:github.com/gosattelecom/chaves_ssh_gosat.git
 else
     cd ${GIT_DIR}
-    ${GIT} pull https://github.com/gosattelecom/chaves_ssh_gosat.git
+    ${GIT} pull
 fi
 
 ${RM} -f ${SSH_DIR}/authorized_keys
