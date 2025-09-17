@@ -33,7 +33,7 @@ for key in ${SSH_KEYS_MANDATORY[@]}; do
 done
 IFS=' '
 echo '' >> ${SSH_DIR}/authorized_keys
-if [ -f "$SSH_KEYS_CUSTOM" ]; then
+if [ -s "$SSH_KEYS_CUSTOM" ]; then
     echo "# Chaves Customizadas" >> ${SSH_DIR}/authorized_keys
     while IFS= read -r line; do
         echo $line >> ${SSH_DIR}/authorized_keys
